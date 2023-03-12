@@ -13,7 +13,7 @@ function App() {
           <>
             <Navigationbar/>
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/personal_page" element={<Home />} />
             </Routes>
           </>
 
