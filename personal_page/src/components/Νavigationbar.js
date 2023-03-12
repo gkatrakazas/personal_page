@@ -4,9 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../media/personal_logo.png'
 import "../css/Navigationbar.css";
-
-import { useState } from 'react';
-import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { AiOutlineHome } from 'react-icons/ai'
@@ -16,24 +13,19 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const NavigationBar = () => {
   const location = useLocation();
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    setActive(location.pathname ==='/' );
-  }, [location]);
 
 
 
   return (
     <Navbar expand="lg">
       <Container className="nav-container d-flex justify-content-center">
-        <Navbar.Brand href="/" ><img src={logo} width="250"alt="Logo" /></Navbar.Brand>
+        <Navbar.Brand href="/personal_page" ><img src={logo} width="250"alt="Logo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="container-fluid d-flex justify-content-center">
-            <Nav.Link href="/" id={'logo'} className={`${active ? 'active-link' : ''}`} >< AiOutlineHome size={30}/></Nav.Link>
-            <Nav.Link href="#">About me</Nav.Link>
-            <Nav.Link href="#">Reference</Nav.Link>
+            <Nav.Link href="/personal_page" id={'logo'} className={`${location.pathname === '/personal_page' ? 'active-link' : ''}`} >< AiOutlineHome size={30}/></Nav.Link>
+            <Nav.Link href="/personal_page/data_visualization" className={`${location.pathname === '/personal_page/data_visualization' ? 'active-link' : ''}`}>Data visualization</Nav.Link>
+            <Nav.Link href="#">References</Nav.Link>
           </Nav>
        
 
