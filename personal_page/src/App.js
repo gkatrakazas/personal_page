@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="personal_app">
-
           <>
             <Navigationbar/>
             <Routes>
