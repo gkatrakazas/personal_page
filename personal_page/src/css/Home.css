@@ -1,22 +1,33 @@
-#container2{
+#container_home{
     display:flex;
     background-color: rgb(239, 239, 239);;
 }
 
-.column-1 {
-  width: 40%; /* sets initial width to 70% */
+.column_left {
+  width: 40%; 
   height: 85vh;
   align-items: center;
   display: flex;
 }
 
-
-.column-2 {
+.column_right {
   padding: 5%;
-    width: 60%; /* sets initial width to 70% */
+    width: 60%; 
     height: 85vh;
     align-items: center;
     display: flex;
+}
+
+.column_left .content{
+  display: 'table-cell';
+  width:'100%';
+  align-items:'center';
+}
+
+.column_right .content{
+  display: 'table-cell';
+  width:'100%';
+  text-align:'justify'
 }
 
 .box {
@@ -25,15 +36,15 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .column-1 {
+    .column_left {
         width: auto;
         height: fit-content;
     }
-    .column-2 {
+    .column_right {
       width: auto;
       height: 50vh;
   }
-    #container2 {
+    #container_home {
         /* it place the items in vertical direction */
       flex-direction: column;
     }

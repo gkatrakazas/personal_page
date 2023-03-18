@@ -6,8 +6,8 @@ import img from '../media/personal_photo.png';
 function Home() {
 
 	return (
-		<div id='container2'>
-    		<div className="column-1 box">
+		<div id='container_home'>
+    		<div className="column_left box">
 				
 				<div style={{ display: 'table-cell',width:'100%',textAlign:'center'}}>
 					<img className='personal_photo' src={img} width={300} alt="A descriptive text" />
@@ -15,7 +15,7 @@ function Home() {
 					<h4 ><strong>Full-Stack Developer</strong></h4>
 				</div>
     		</div>
-    		<div className="column-2 box">
+    		<div className="column_right box">
 			<div style={{ display: 'table-cell',width:'100%',textAlign:'justify'}}>
 
 				<p>

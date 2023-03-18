@@ -8,7 +8,9 @@ function Datavisualization() {
 	return (
 		<div id='container_data_visualization'>
 			<div style={{ display: 'table-cell',width:'100%',textAlign:'center'}}>
-				<img className='data_img' src={data_img} style={{width:'70%'}} alt="A descriptive text" />
+			<a href="https://ourworldindata.org/brief-history-of-ai" target="_blank" rel="noopener noreferrer">
+				<img className='data_img' src={data_img} style={{width:'70%'}} alt="This is data" />
+			</a>
 
 				<div id='content_data_visualization'>
 					<p>

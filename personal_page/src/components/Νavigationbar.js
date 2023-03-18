@@ -25,7 +25,7 @@ const NavigationBar = () => {
         <Nav className="container-fluid d-flex justify-content-center">
             <Nav.Link href="/personal_page" id={'logo'} className={`${location.pathname === '/personal_page' ? 'active-link' : ''}`} >< AiOutlineHome size={30}/></Nav.Link>
             <Nav.Link href="/personal_page/data_visualization" className={`${location.pathname === '/personal_page/data_visualization' ? 'active-link' : ''}`}>Data visualization</Nav.Link>
-            <Nav.Link href="#">References</Nav.Link>
+            <Nav.Link href="/personal_page/references" className={`${location.pathname === '/personal_page/references' ? 'active-link' : ''}`} >References</Nav.Link>
           </Nav>
        
 
